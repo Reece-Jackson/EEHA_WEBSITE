@@ -23,7 +23,7 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1>
-						<img src = "logo.png";
+						<img src = "images\EEHA.png";
 							alt = "EEHA Automation ";
 							 
 							 height=100%;
@@ -53,7 +53,7 @@
 					<section id="banner">
 						<div class="inner">
 							<div class="logo">
-								<img src = "logo.png";
+								<img src = "images\eeha.png";
 								alt = "EEHA Automation ";
 								 width=100% ;
 								 height=auto>
@@ -69,13 +69,14 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">AUTOMATION</h2>
-										<p> EEHA Specialises in blah blah blah this and that automation with focus on technology from companies A, B and C</p>
+									<img src="images/project-management2.png" alt="" />
+									<div class="content1">
 										
-										<button type="button" class="collapsible">Our Automation Services</button>
+										
+										<button type="button" class="collapsible">AUTOMATION</button>
 										<div class="contentcolapse">
+											<p> EEHA Specialises in blah blah blah this and that automation with focus on technology from companies A, B and C</p>
+										
 											<p>Our services include:</p>
 											<p>												
 												<ul>		
@@ -91,25 +92,35 @@
 											<p>of PLC, SCADA, HMI, MES, IT, Networking, and Reporting Systems.</p>
 										</div>
 										<style>
+											.content1 {
+												padding-right: 3em
+											}
+											.collapsible {
+												font-size: 1em;
+												padding: 0 2em;
+												
+											}
 											.contentcolapse {
 											  padding: 0 18px;
 											  background-color: rgba(255, 255, 255, 0);
 											  max-height: 0;
 											  overflow: hidden;
-											  text-align: left;
+											  text-align: justify;
 											  transition: max-height 0.2s ease-out;
 											}
 											.collapsible:after {
-											content: '\02795'; /* Unicode character for "plus" sign (+) */
-											font-size: 12px;
+											content: '+'; /* Unicode character for "plus" sign (+) */
+											font-size: 26px;
 											color: white;
+											
 											
 											float: right;
 											margin-left: 5px;
 											}
 
 											.active:after {
-											content: "\2796"; /* Unicode character for "minus" sign (-) */
+											content: "-";
+											font-size: 26px; /* Unicode character for "minus" sign (-) */
 											}
 											</style>
 											
@@ -136,23 +147,77 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">DRAFTING</h2>
-										<p>Our Services include:
-											<ul class="columns" data-columns="2">
-											<li>P & ID Drafting</li>
-											<li>Electrical and Instrumentation Drafting</li>
-											<li>CAD Conversions</li>
-											<li>Tailored Statutory Drawing Packages</li>
-											<li>RPEQ sign off</li>
-											<li>Tracing Services</li>
-											<li>Electrical Design</li>
-											<li>As Builts</li>
-											<li>PTW “Power tools for windows’ – single line drawing maintenance</li>
-											<li>Drawing Audits</li>
-											<li>Drawing Management </li>
-											</ul>
+									<img src="images/project-management2.png" alt="" />
+									<div class="content2">
+										<button type="button" class="collapsible2">DRAFTING</button>
+										<div class="contentcolapse2">										
+											<p><br>Our Services include:
+												<ul class="columns" data-columns="2">
+												<li>P & ID Drafting</li>
+												<li>Electrical and Instrumentation Drafting</li>
+												<li>CAD Conversions</li>
+												<li>Tailored Statutory Drawing Packages</li>
+												<li>RPEQ sign off</li>
+												<li>Tracing Services</li>
+												<li>Electrical Design</li>
+												<li>As Builts</li>
+												<li>PTW “Power tools for windows’ – single line drawing maintenance</li>
+												<li>Drawing Audits</li>
+												<li>Drawing Management </li>
+												</ul>
+												
+												</p>
+										</div>
+										<style>
+											.content2 {
+												padding-left: 3em;
+											}
+											.collapsible2 {
+												font-size: 1em;
+												padding: 0 2em;
+											}
+											.contentcolapse2 {
+											  padding: 0 18px;
+											  background-color: rgba(255, 255, 255, 0);
+											  max-height: 0;
+											  overflow: hidden;
+											  text-align: justify;
+											  transition: max-height 0.2s ease-out;
+											  font-size: 0.8em
+											}
+											.collapsible2:after {
+											content: '+'; /* Unicode character for "plus" sign (+) */
+											font-size: 26px;
+											color: white;
+											
+											
+											float: right;
+											margin-left: 5px;
+											}
+
+											.active2:after {
+											content: "-";
+											font-size: 26px; /* Unicode character for "minus" sign (-) */
+											}
+											</style>
+											
+											<script>
+											var coll = document.getElementsByClassName("collapsible2");
+											var i;
+											
+											for (i = 0; i < coll.length; i++) {
+											  coll[i].addEventListener("click", function() {
+												this.classList.toggle("active");
+												var content = this.nextElementSibling;
+												if (content.style.maxHeight){
+												  content.style.maxHeight = null;
+												} else {
+												  content.style.maxHeight = content.scrollHeight + "px";
+												}
+											  });
+											}
+											</script>
+										
 											<style>
 												ul {
  												columns: 2;
@@ -160,8 +225,7 @@
   												-moz-columns: 2;
 					}
 											</style>
-											</p>
-										<a href="#" class="special">Learn more</a>
+										
 									</div>
 								</div>
 							</section>

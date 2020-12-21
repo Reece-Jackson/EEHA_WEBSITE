@@ -2876,6 +2876,7 @@ input, select, textarea {
 		font-size: 0.8em;
 		font-weight: 700;
 		height: 3.75em;
+		width: auto;
 		letter-spacing: 0.1em;
 		line-height: 3.75em;
 		padding: 0 2.25em;
@@ -3822,7 +3823,7 @@ input, select, textarea {
 			}
 
 				.wrapper.spotlight .image img {
-					border-radius: 100%;
+					
 					width: 100%;
 				}
 
