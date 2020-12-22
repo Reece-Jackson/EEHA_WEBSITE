@@ -45,6 +45,17 @@
 								<li><a href="index.html">Contact</a></li>
 								
 							</ul>
+							<style>
+								.links {
+								
+												
+ 								columns: 1;
+  								-webkit-columns: 1;
+  								-moz-columns: 1;
+											
+											
+								}
+							</style>
 							<a href="#" class="close">Close</a>
 						</div>
 					</nav>
@@ -69,7 +80,7 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<img src="images/project-management2.png" alt="" />
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content1">
 										
 										
@@ -94,7 +105,9 @@
 										</div>
 										<style>
 											.content1 {
-												padding-right: 3em
+												padding-right: 3em;
+												width: 100%;
+												-ms-flex: 2;
 											}
 											.collapsible {
 												font-size: 1em;
@@ -149,7 +162,7 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<img src="images/project-management2.png" alt="" />
+									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content2">
 										<button type="button" class="collapsible2">DRAFTING</button>
 										<div class="contentcolapse2">										
@@ -173,6 +186,8 @@
 										<style>
 											.content2 {
 												padding-left: 3em;
+												width: 100%;
+												-ms-flex: 2;
 											}
 											.collapsible2 {
 												font-size: 1em;
@@ -185,6 +200,7 @@
 											  overflow: hidden;
 											  text-align: left;
 											  transition: max-height 0.2s ease-out;
+											  
 											  
 											}
 											.collapsible2:after {
@@ -235,15 +251,71 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">PROJECT MANAGEMENT</h2>
-										<p>EEHA Services have extensive experience in Electrical Hazardous Area Management, Installation, Overhaul and Statutory Maintenance requirements, and can assist your company with development and implementation of Life cycle maintenance systems developed from first principles to meet your production and statutory obligations.
+									<a href="#" class="image"><img src="images/project-management2.png" alt="" /></a>
+									<div class="content3">
+									<button type="button" class="collapsible3">PROJECT MANAGEMENT</button>
+										<div class="contentcolapse3">
+											<br>
+											<p>EEHA Services have extensive experience in Electrical Hazardous Area Management, Installation, Overhaul and Statutory Maintenance requirements, and can assist your company with development and implementation of Life cycle maintenance systems developed from first principles to meet your production and statutory obligations.
 
-											Want to know more? Visit eehas.com.au
+												Want to know more? Visit eehas.com.au
+												
+												Contact Michael Christian on 0458-911-524 for all your project management needs.</p>
 											
-											Contact Michael Christian on 0458-911-524 for all your project management needs.</p>
-										<a href="#" class="special">Learn more</a>
+										</div>
+										<style>
+											.content3 {
+												padding-right: 3em;
+												width: 100%;
+												-ms-flex: 2;
+											}
+											.collapsible3 {
+												font-size: 1em;
+												padding: 0 2em;
+												
+											}
+											.contentcolapse3 {
+											  padding: 0 18px;
+											  background-color: rgba(255, 255, 255, 0);
+											  max-height: 0;
+											  overflow: hidden;
+											  text-align: right;
+											  transition: max-height 0.2s ease-out;
+											  
+											}
+											.collapsible3:after {
+											content: '+'; /* Unicode character for "plus" sign (+) */
+											font-size: 26px;
+											color: white;
+											
+											
+											float: right;
+											margin-left: 5px;
+											}
+
+											.active:after {
+											content: "-";
+											font-size: 26px; /* Unicode character for "minus" sign (-) */
+											}
+											</style>
+											
+											<script>
+											var coll = document.getElementsByClassName("collapsible3");
+											var i;
+											
+											for (i = 0; i < coll.length; i++) {
+											  coll[i].addEventListener("click", function() {
+												this.classList.toggle("active");
+												var content = this.nextElementSibling;
+												if (content.style.maxHeight){
+												  content.style.maxHeight = null;
+												} else {
+												  content.style.maxHeight = content.scrollHeight + "px";
+												}
+											  });
+											}
+											</script>
+										
 									</div>
 								</div>
 							</section>
@@ -323,6 +395,17 @@
 								<li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/eehaautomation">facebook.com/eehaautomation</a></li>
 								<li class="icon brands fa-linkedin-in"><a href="https://www.linkedin.com/company/eeha-automation/">linkedin.com/eeha-automation</a></li>
 							</ul>
+							<style>
+								.contact {
+								
+												
+ 								columns: 1;
+  								-webkit-columns: 1;
+  								-moz-columns: 1;
+											
+											
+								}
+							</style>
 
 						</div>
 					</section>
